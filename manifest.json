@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Video Loop",
+    "description": "Adds a button to loop a video on YouTube",
+    "version": "1.0",
+    "icons": {
+        "19": "icons/icon_19px.png",
+        "32": "icons/icon_32px.png",
+        "38": "icons/icon_38px.png",
+        "48": "icons/icon_48px.png",
+        "128": "icons/icon_128px.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "script.js"
+            ],
+            "css": [
+                "style.css"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}

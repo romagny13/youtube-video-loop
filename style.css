@@ -1,0 +1,16 @@
+a.loop-button {
+  text-align: center;
+}
+
+a.loop-button svg {
+  margin-bottom: 2px;
+  width: 52%;
+  vertical-align: middle;
+  fill: #fff;
+  transition-duration: 0.35s;
+}
+
+a.loop-button.active svg {
+  fill: #f30505;
+  transform: rotate(90deg);
+}
