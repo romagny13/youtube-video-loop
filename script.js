@@ -47,7 +47,7 @@ function createLoopButton() {
   const svg = getLoopButtonSVG();
   loopButton.appendChild(svg);
 
-  tooltip = createTooltip(loopButton);
+  createTooltip(loopButton);
 
   loopButton.addEventListener("click", toggleLoop);
   return loopButton;
